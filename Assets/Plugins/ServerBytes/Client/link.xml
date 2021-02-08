@@ -1,0 +1,28 @@
+﻿<linker>
+  <assembly fullname="MessagePack.Annotations" preserve="all"/>
+  <assembly fullname="MessagePack" preserve="all"/>
+  <assembly fullname="Microsoft.Bcl.AsyncInterfaces" preserve="all"/>
+  <assembly fullname="ServerBytes.Client" preserve="all"/>
+  <assembly fullname="ServerBytes.Client.Unity" preserve="all"/>
+  <assembly fullname="ServerBytes.Connectivity.TCP.Core" preserve="all"/>
+  <assembly fullname="ServerBytes.ConnectivitySDK" preserve="all"/>
+  <assembly fullname="Dynamitey" preserve="all"/>
+  <assembly fullname="ImpromptuInterface" preserve="all"/>
+  <assembly fullname="ServerBytes.PluginExecutor" preserve="all"/>
+  <assembly fullname="ServerBytes.PluginSDK.Client" preserve="all"/>
+  <assembly fullname="ServerBytes.PluginSDK" preserve="all"/>
+  <assembly fullname="ServerBytes.Pooling" preserve="all"/>
+  <assembly fullname="System.Buffers" preserve="all"/>
+  <assembly fullname="System.Memory" preserve="all"/>
+  <assembly fullname="System.Numerics.Vectors" preserve="all"/>
+  <assembly fullname="System.Reflection.Emit" preserve="all"/>
+  <assembly fullname="System.Reflection.Emit.ILGeneration" preserve="all"/>
+  <assembly fullname="System.Reflection.Emit.Lightweight" preserve="all"/>
+  <assembly fullname="System.Runtime.CompilerServices.Unsafe" preserve="all"/>
+  <assembly fullname="System.Text.Encodings.Web" preserve="all"/>
+  <assembly fullname="System.Text.Json" preserve="all"/>
+  <assembly fullname="System.Threading.Tasks.Extensions" preserve="all"/>
+  <assembly fullname="System.Core">
+    <type fullname="System.Linq.Expressions.Interpreter.LightLambda" preserve="all" />
+  </assembly>
+</linker>

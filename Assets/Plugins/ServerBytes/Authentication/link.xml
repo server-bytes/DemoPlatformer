@@ -1,0 +1,4 @@
+﻿<linker>
+  <assembly fullname="ServerBytes.Plugins.Authentication.Abstractions" preserve="all"/>
+  <assembly fullname="ServerBytes.Plugins.Authentication.Client" preserve="all"/>
+</linker>

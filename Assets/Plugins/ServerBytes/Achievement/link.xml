@@ -1,0 +1,4 @@
+﻿<linker>
+  <assembly fullname="ServerBytes.Plugins.Achievement.Abstractions" preserve="all"/>
+  <assembly fullname="ServerBytes.Plugins.Achievement.Client" preserve="all"/>
+</linker>
