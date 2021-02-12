@@ -1,14 +1,15 @@
 ﻿using ServerBytes.Client;
 using ServerBytes.Client.Abstractions;
 using ServerBytes.Plugins.Authentication.Client;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ServerBytesManager : MonoBehaviour
 {
     public string appKey;
     public static IClient Client { get; private set; }
-
-    public static AuthenticationServiceFactory AuthFactory;
+    public static AuthenticationServiceFactory AuthFactory { get; private set; }
 
     void Awake()
     {
@@ -19,6 +20,7 @@ public class ServerBytesManager : MonoBehaviour
 
         var pluginHost = ClientFactory.GetPluginHost(appKey, "development");
         AuthFactory = new AuthenticationServiceFactory(pluginHost);
+
         Client = UnityClientFactory.GetClient(pluginHost);
 
         Client.OnConnected += Client_OnConnected;
@@ -40,6 +42,6 @@ public class ServerBytesManager : MonoBehaviour
     private void Client_OnConnected()
     {
         Debug.Log("Connected");
-        LoginManager.AuthService = AuthFactory.Create(Client);
+        LoginManager.AuthenticationService = AuthFactory.Create(Client);
     }
 }
